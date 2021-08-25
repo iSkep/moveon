@@ -1,0 +1,33 @@
+.header {
+    background: url("/img/header-bg.svg") no-repeat center / cover;
+    &__wrapper {
+        // position: fixed;
+        // z-index: 50;
+        // top: 0;
+        // left: 0;
+        // width: 100%;
+    }
+    &__items {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        min-height: 145px;
+        padding: 5px 0;
+    }
+    &__burger {
+        display: none;
+    }
+    &__main {
+        display: flex;
+        flex: 1 1 auto;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__logo {
+        font-size: 36px;
+        font-weight: 500;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #fff;
+    }
+}
