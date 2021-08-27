@@ -30,13 +30,17 @@ html {
 }
 
 .menu {
-    flex: 0 1 526px;
     &__list {
         display: flex;
         justify-content: space-between;
     }
     &__item {
-        list-style: none;  
+        margin-right: 24px;
+        padding: 5px 0;
+        list-style: none;
+        &:last-child {
+            margin-right: 0;
+        }
     }
     &__link {
         font-size: 20px;
@@ -54,10 +58,48 @@ html {
         align-items: center;
         width: 25px;
         height: 25px;
+        margin-right: 18px;
         border-radius: 50%;
-        font-size: 12px;
+        font-size: 14px;
         text-decoration: none;
         background-color: #fff;
         color: #8253D8;
+        &:last-child {
+            margin-right: 0;
+        }
+        &_big {
+            width: 50px;
+            height: 50px;
+            font-size: 22px;
+        }
+    }
+}
+
+.title {
+    margin-bottom: 14px;
+    font-size: 28px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.main {
+    background: url("/img/header-bg.svg") 0 0 / 100% 100% no-repeat;
+}
+
+.contacts {
+    &__item {
+        display: block;
+        margin-bottom: 8px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    &__email {
+        color: #fff;
+        text-decoration: none;
+    }
+    &__phone {
+        color: #fff;
+        text-decoration: none;
     }
 }
