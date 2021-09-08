@@ -12,10 +12,19 @@
     color: #fff;
     text-transform: uppercase;
     text-decoration: none;
+    transition: all 0.1s ease-in;
     &__icon {
         margin-right: 5px;
         font-size: 28px;
         line-height: 0;
+    }
+    @media (min-width: 992px) {
+        &:hover {
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+        }
+    }
+    &:active {
+        transform: scale(0.9);
     }
 }
 
@@ -32,14 +41,50 @@
         font-size: 14px;
         text-decoration: none;
         background-color: #fff;
-        color: #8253D8;
+        color: #8253d8;
+        transition: all 0.3s ease-out;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
         &:last-child {
             margin-right: 0;
+        }
+        @media (min-width: 992px) {
+            &:hover {
+                color: #fff;
+            }
+        }
+        &:active {
+            transition: all 0.1s ease-in;
+            transform: scale(0.9);
         }
         &_big {
             width: 50px;
             height: 50px;
             font-size: 26px;
+            box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+        }
+    }
+}
+
+._icon-twitter {
+    @media (min-width: 992px) {
+        &:hover {
+            background: #1da1f2;
+        }
+    }
+}
+
+._icon-facebook {
+    @media (min-width: 992px) {
+        &:hover {
+            background: #4267b2;
+        }
+    }
+}
+
+._icon-instagram {
+    &:hover {
+        @media (min-width: 992px) {
+            background: #e1306c;
         }
     }
 }
