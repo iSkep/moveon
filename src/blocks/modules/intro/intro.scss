@@ -1,12 +1,27 @@
 .intro {
     padding: 140px 0 155px 0;
     background: url("/img/header-bg.svg") 0 0 / 100% 100% no-repeat;
+    @media (max-width: 767.98px) {
+        padding: 90px 0 100px 0;
+    }
     &__wrapper {
         display: flex;
+        @media (max-width: 767.98px) {
+            flex-direction: column;
+        }
     }
     &__content {
-        flex: 0 1 40%;
-        padding: 11% 0 0 5%;
+        flex: 0 1 45%;
+        padding: 10% 0 0 5%;
+        @media (max-width: 1199.98px) {
+            flex: 0 1 49%;
+        }
+        @media (max-width: 991.98px) {
+            padding: 5% 0 0 5%;
+        }
+        @media (max-width: 767.98px) {
+            padding: 0;
+        }
     }
     &__title {
         margin-bottom: 18px;
@@ -14,22 +29,67 @@
         font-weight: 700;
         color: #fff;
         text-transform: uppercase;
+        @media (max-width: 1544.98px) {
+            font-size: 42px;
+        }
+        @media (max-width: 1199.98px) {
+            font-size: 36px;
+        }
+        @media (max-width: 991.98px) {
+            font-size: 30px;
+        }
+        @media (max-width: 767.98px) {
+            margin-bottom: 8px;
+            font-size: 28px;
+            text-align: center;
+        }
     }
     &__subtitle {
-        margin: 0 0 40px 0;
+        margin-bottom: 40px;
         font-size: 20px;
         color: #fff;
+        @media (max-width: 1199.98px) {
+            font-size: 18px;
+        }
+        @media (max-width: 767.98px) {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+    }
+    &__store {
+        @media (max-width: 767.98px) {
+            text-align: center;
+        }
     }
     &__img {
-        flex: 0 1 60%;
-        padding-top: 50%;
-        background: url("/img/header-img-01.png") 40% 70px / 36% auto no-repeat,
-            url("/img/header-img-02.png") 88% 10px / 36% auto no-repeat;
+        flex: 0 1 55%;
+        padding-top: 52%;
+        background-image: url("/img/header-img-01.png"), url("/img/header-img-02.png");
+        background-repeat: no-repeat;
+        background-position: 31% 70px, 86% 10px;
+        background-size: 39% auto, 39% auto;
         @media
             (-webkit-min-device-pixel-ratio: 2),
             (min-resolution: 192dpi) {
-            background: url("/img/header-img-01@2x.png") 40% 80px / 36% auto no-repeat,
-                url("/img/header-img-02@2x.png") 88% 10px / 36% auto no-repeat;
+            background-image: url("/img/header-img-01@2x.png"), url("/img/header-img-02@2x.png");
+        }
+        @media (max-width: 1199.98px) {
+            flex: 0 1 50%;
+            background-size: 43% auto, 43% auto;
+            background-position: 22% 70px, 86% 10px;
+        }
+        @media (max-width: 991.98px) {
+            background-position: 22% 50px, 86% 10px;
+        }
+        @media (max-width: 767.98px) {
+            padding-top: 145%;
+            background-position: 19% 40px, 82% 10px;
+        }
+        @media (max-width: 575.98px) {
+            padding-top: 170%;
+        }
+        @media (max-width: 339.98px) {
+            padding-top: 180%;
         }
     }
 }
