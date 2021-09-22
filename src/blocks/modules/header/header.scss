@@ -3,9 +3,9 @@
     top: 0;
     left: 0;
     width: 100%;
-    min-height: 145px;
+    min-height: 10px;
     @media (max-width: 767.98px) {
-        min-height: 70px;
+        min-height: 50px;
     }
     &__wrapper {
         position: fixed;
