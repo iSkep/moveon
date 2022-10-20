@@ -1,6 +1,6 @@
 .intro {
     padding: 140px 0 155px 0;
-    background: url("/img/header-bg.svg") 0 0 / 100% 100% no-repeat;
+    background: url("../img/header-bg.svg") 0 0 / 100% 100% no-repeat;
     @media (max-width: 767.98px) {
         padding: 90px 0 100px 0;
     }
@@ -64,14 +64,14 @@
     &__img {
         flex: 0 1 55%;
         padding-top: 52%;
-        background-image: url("/img/header-img-01.png"), url("/img/header-img-02.png");
+        background-image: url("../img/header-img-01.png"), url("../img/header-img-02.png");
         background-repeat: no-repeat;
         background-position: 31% 70px, 86% 10px;
         background-size: 39% auto, 39% auto;
         @media
             (-webkit-min-device-pixel-ratio: 2),
             (min-resolution: 192dpi) {
-            background-image: url("/img/header-img-01@2x.png"), url("/img/header-img-02@2x.png");
+            background-image: url("../img/header-img-01@2x.png"), url("../img/header-img-02@2x.png");
         }
         @media (max-width: 1199.98px) {
             flex: 0 1 50%;
