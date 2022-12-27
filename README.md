@@ -1,8 +1,9 @@
-**Gulp**  
-**Webpack**  
-**HTML5**  
-**SCSS**  
-**JavaScript**   
+# [MOVEON](https://moveon-skep.netlify.app/) | Landing Page
+## 🐱‍💻 Tech stack
+* HTML, CSS, SCSS
+* JavaScript
+* Gulp, Webpack
+* BEM   
 
 # gulp-scss-starter
 ## :fire: Особенности
