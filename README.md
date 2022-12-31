@@ -3,7 +3,8 @@
 * HTML, CSS, SCSS
 * JavaScript
 * Gulp, Webpack
-* BEM   
+* BEM
+* GSAP
 
 # gulp-scss-starter
 ## :fire: Особенности

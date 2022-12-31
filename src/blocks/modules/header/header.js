@@ -1,3 +1,5 @@
+import { gsap } from 'gsap';
+
 window.addEventListener("DOMContentLoaded", () => {
 
     // Burger menu
@@ -55,3 +57,17 @@ window.addEventListener("DOMContentLoaded", () => {
     headerObserver.observe(headerElement)
 
 });
+
+const header = document.querySelector('.header__wrapper');
+
+window.addEventListener('load', revealHeader);
+
+function revealHeader() {
+    const tl = gsap.timeline({
+        defaults: {
+            duration: 1,
+        },
+    });
+
+    tl.from(header, {autoAlpha: 0, top: -30, delay: 2.6})
+}

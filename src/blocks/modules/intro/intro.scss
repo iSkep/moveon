@@ -29,6 +29,8 @@
         font-weight: 700;
         color: #fff;
         text-transform: uppercase;
+        visibility: hidden;
+        will-change: transform;
         @media (max-width: 1544.98px) {
             font-size: 42px;
         }
@@ -48,6 +50,8 @@
         margin-bottom: 40px;
         font-size: 20px;
         color: #fff;
+        visibility: hidden;
+        will-change: transform;
         @media (max-width: 1199.98px) {
             font-size: 18px;
         }
@@ -57,6 +61,8 @@
         }
     }
     &__store {
+        visibility: hidden;
+        will-change: transform;
         @media (max-width: 767.98px) {
             text-align: center;
         }
@@ -68,6 +74,8 @@
         background-repeat: no-repeat;
         background-position: 31% 70px, 86% 10px;
         background-size: 39% auto, 39% auto;
+        visibility: hidden;
+        will-change: background-position;
         @media
             (-webkit-min-device-pixel-ratio: 2),
             (min-resolution: 192dpi) {
